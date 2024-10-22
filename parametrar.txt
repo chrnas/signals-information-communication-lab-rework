@@ -1,0 +1,3 @@
+Ditt frekvensband:
+   Undre gränsfrekvens: f1 = 80 kHz
+   Övre gränsfrekvens:  f2 = 100 kHz

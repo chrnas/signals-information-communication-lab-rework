@@ -4,11 +4,11 @@ clc
 %% Från uppgift
 [xI,fs] = audioread("xI.wav"); 
 [xQ,fs] = audioread("xQ.wav"); 
-x = sender(xI,xQ);
+x = sender_elliot(xI,xQ);
 
 y = TSKS10channel(x); 
 %y = dummychannel(x, 2.55, 100);
-[zI,zQ,A,tau] = receiver(y);
+[zI,zQ,A,tau] = receiver_elliot(y);
 
 %% Tidsvektor
 Ts = 1/fs;

@@ -1,7 +1,7 @@
-function x = sender(xI,xQ)
+function x = sender_elliot(xI,xQ)
     %% Konstanter
-    f1 = 100e3;                                                                 %Undre gräns
-    f2 = 120e3;                                                                 %Övre gräns
+    f1 = 20e3;                                                                 %Undre gräns
+    f2 = 40e3;                                                                 %Övre gräns
     fc = (f1+f2)/2;                                                             %Bärfrekvens
     M = 20;                                                                     %Upp-/nedsamplingsfaktor
     fs = 20e3;                                                                  %Sampelfrekvens

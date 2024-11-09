@@ -1,8 +1,8 @@
 function x = sender(xQ, xI)
 
     %% Initiate variables    
-    f_low = 20000;  % Lower cutoff frequency
-    f_high = 80000; % Higher cutoff frequency
+    f_low = 80000;  % Lower cutoff frequency
+    f_high = 100000; % Higher cutoff frequency
     fs_low = 20000; % Sampling frequency
     upsampling_factor = 20;
     fc = (f_low + f_high) / 2;  % Carrier frequency
@@ -11,7 +11,7 @@ function x = sender(xQ, xI)
     fs_high = fs_low * upsampling_factor;   % Upsampled sampling frequency
     Ts_low = 1 / fs_low;    % Sampling period time
     Ts_high = 1 / fs_high;  % Upsampled sampling period time
-    order = 200;
+    order = 500;
     
     %% Upsample xQ
     xQ_upsampled = upsample(xQ, upsampling_factor);

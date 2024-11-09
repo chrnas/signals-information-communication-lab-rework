@@ -1,4 +1,4 @@
-function [zI,zQ,A,tau] = receiver(x)
+function [zI,zQ,A,tau] = receiver_elliot(x)
     %% Definiera konstanter
     f1 = 100e3;                                                                 %Undre gräns, från uppgift
     f2 = 120e3;                                                                 %Övre gräns, från uppgift

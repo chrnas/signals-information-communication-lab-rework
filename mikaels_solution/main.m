@@ -12,8 +12,8 @@ tQ=TQs*[0:LQ-1];
 
 x = sender(xQ,xI);
 
-y = dummychannel(x,1,400000); % tao ska bli 1
-%y = TSKS10channel(x);
+%y = dummychannel(x, 13, 1123); % tao ska bli 1
+y = TSKS10channel(x);
 
 % Sampling frequencies
 fsLow = 80000;

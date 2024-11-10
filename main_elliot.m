@@ -6,7 +6,7 @@ clc
 [xQ,fs] = audioread("xQ.wav"); 
 x = sender_elliot(xI,xQ);
 
-y = TSKS10channel(x); 
+y = TSKS10channelmicke(x); 
 %y = dummychannel(x, 2.55, 100);
 [zI,zQ,A,tau] = receiver_elliot(y);
 

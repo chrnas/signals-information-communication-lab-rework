@@ -1,7 +1,7 @@
 function x = sender_elliot(xI,xQ)
     %% Konstanter
-    f1 = 20e3;                                                                 %Undre gräns
-    f2 = 40e3;                                                                 %Övre gräns
+    f1 = 120000;                                                                 %Undre gräns
+    f2 = 140000;                                                                 %Övre gräns
     fc = (f1+f2)/2;                                                             %Bärfrekvens
     M = 20;                                                                     %Upp-/nedsamplingsfaktor
     fs = 20e3;                                                                  %Sampelfrekvens
@@ -13,8 +13,8 @@ function x = sender_elliot(xI,xQ)
     %[xQ,fs]=audioread("xQ.wav");
     
     %Uppsampla i tidsled
-    xI = upsample(xI, M)*M;                                                     %Uppsampla xI
-    xQ = upsample(xQ, M)*M;                                                     %Uppsampla xQ
+    xI = upsample(xI, M);                                                     %Uppsampla xI
+    xQ = upsample(xQ, M);                                                     %Uppsampla xQ
     
             
     %% Filtrera i tidsled

@@ -1,7 +1,7 @@
 function [zI,zQ,A,tau] = receiver_elliot(x)
     %% Definiera konstanter
-    f1 = 100e3;                                                                 %Undre gräns, från uppgift
-    f2 = 120e3;                                                                 %Övre gräns, från uppgift
+    f1 = 120000;                                                                 %Undre gräns, från uppgift
+    f2 = 140000;                                                                 %Övre gräns, från uppgift
     fs = 20e3;                                                                  %Sampelfrekvens
     fc = (f1+f2)/2;                                                             %Bärfrekvens
     M = 20;                                                                     %Upp-/nedsamplingsfaktor

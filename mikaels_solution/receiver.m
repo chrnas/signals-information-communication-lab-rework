@@ -40,7 +40,8 @@ function [zI, zQ, A, tau] = receiver(y)
     autocorrelation = xcorr(chirp_signal);
     [max_val_auto, max_index_auto] = max(abs(autocorrelation));
     A = (corr(max_peak_index)/autocorrelation(max_index_auto));
-    y = y.*(1/(A));
+    y = y.*(1/(A)); % If A is negative, 
+    
     %% Demodulate the signal
     t = Ts_high*(0:(length(y)-1)).'; % get the new time vector
     % Apply the carrier for demodulation
